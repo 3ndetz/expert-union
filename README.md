@@ -12,7 +12,7 @@ Here's the same idea, but for LLMs. You can ask multiple LLMs the same question 
 
 ## Current implementation
 
-Here's only the simpliest implementation using only 1 LLM, but with many experts defined in role-prompts (`sandbox/expert_roles.yml`).
+Here's only the simpliest implementation using only 1 LLM, but with many experts defined in role-prompts (`resources/expert_roles.yml`).
 
 Seems like it works well (but not too good), but I need to perform some benchmarks to be sure. Interesting fact: final expert role very often chooses really correct answer, even if other experts disagree with it.
 

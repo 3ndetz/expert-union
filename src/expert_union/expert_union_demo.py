@@ -7,7 +7,11 @@ import yaml
 # python d:/Repos/expert-union/src/expert_union/expert_union_demo.py
 # Загрузка ролей экспертов
 roles: Dict[str, str]
-with open('sandbox/fun_roles.yml', encoding='utf-8') as f:
+# Получаем путь к корневой папке проекта
+import pathlib
+project_root = pathlib.Path(__file__).parent.parent.parent
+roles_file = project_root / 'resources' / 'fun_roles.yml'
+with open(roles_file, encoding='utf-8') as f:
     roles = yaml.safe_load(f)
 
 
